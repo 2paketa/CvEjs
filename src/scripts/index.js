@@ -7,7 +7,8 @@ let domainButton = document.getElementById('domain-request-button');
 let listArea = document.getElementById('list-area');
 let input = document.getElementById('user-request');
 let generateButton = document.getElementById('generate-request-button');
-let filterEmptyDocs = document.getElementById('user-checkbox');
+let filterEmptyDocs = document.getElementById('user-empty-domains-container');
+let yearsofExpInput = document.getElementById('years-of-experience');
 let ApiParagraphButton = document.getElementById('api-paragraph-request-button');
 let completedParagraphsArea = document.getElementById('completed-paragraph');
 let cvERepo = new CvERepo();
@@ -66,11 +67,18 @@ function closeAllLists(elmnt){
 //Generates experience based on the requested domains//
 generateButton.addEventListener('click', function(){
     resetMainWindow();
-    let value = input.value.split(', ');
+    let yearsOfExp = parseInt(yearsofExpInput.value);
+    if (Number.isNaN(yearsOfExp)){
+        alert('Please insert years of experience to proceed');
+        return;
+    }
+    let value = input.value.split(',');
     let pArray = [];
-    value.forEach(string => pArray.push(cvERepo.domains.find(x => x.name.match(string))));
-    let generateParagraph = new GenerateParagraph(pArray, 5);
-    generateParagraph.get();
+    value.forEach(string => {
+        let stringTrimmed = string.trim();
+        pArray.push(cvERepo.domains.find(x => x.name.toUpperCase() === stringTrimmed.toUpperCase()));
+    });
+    new GenerateParagraph(pArray, yearsOfExp);
 });
 
 //Gets list of domains with documents//

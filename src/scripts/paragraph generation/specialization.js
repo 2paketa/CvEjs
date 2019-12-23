@@ -8,9 +8,9 @@ export class Specialization{
     }
 
     createListOfDomains(){
-        // Common.shuffleArray(this.domainArray);
         let generatedString;
         let stringArray = [];
+
         for (let i = 0; i < this.domainArray.length; i++){
             let domain = this.domainArray[i];
             let docs = this.createDocumentsForDomains(domain.documents);

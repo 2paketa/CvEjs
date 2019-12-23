@@ -7,6 +7,7 @@ export class GenerateParagraph{
         this.yearsOfExperience = yearsOfExperience;
         this.specialization = new Specialization(this.domainArray);
         this.header = new Header(this.yearsOfExperience);
+        this.get();
     }
 
     get(){

@@ -23,7 +23,7 @@ export class DataFromApi{
         },
         error => {
             console.log(error);
-            alert('Api offline, please try again later.');
+            alert('Could not retrieve data, please check your connection with the API.');
         }
         );
         return objectArray;

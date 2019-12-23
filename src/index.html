@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,14 +59,18 @@
                     <form autocomplete="off" action="/action_page.php">
                         <div class="autocomplete">
                           <input id="user-request" type="text" name="myCountry" placeholder="Domain..">
+
+                        </div>
+                        <div id="user-years-of-experience-container">
+                            <input type="number" id="years-of-experience"> Please enter years of experience 
                         </div>
                       </form>
                     <div id="user-buttons-container">
-                        <button id="domain-request-button" class="user-buttons">Get domains</button>    
+                        <button id="domain-request-button" class="user-buttons">Get domains</button>
                         <button id="api-paragraph-request-button" class="user-buttons">Get Completed Paragraph from API</button>
                         <button id="generate-request-button" class="user-buttons">Generate experience</button>
                     </div>
-                    <div id="user-checkbox">
+                    <div id="user-empty-domains-container">
                         <input type="checkbox" id="empty-domains-checkbox"> Show populated domains only
                     </div>
     
@@ -77,6 +81,7 @@
                     <div class="content"></div>
                 </div>
                 <div id="completed-paragraph"></div>
+
             </div>
         </article>
     </main>
