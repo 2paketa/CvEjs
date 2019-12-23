@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>CV Enhancer</title>
+    <script>
+    function displayNavBar() 
+    {
+        var x = document.getElementById("overlay-container");
+        if (x.style.display === "none" || x.style.display === "")
+        {
+            x.style.display = "flex";
+        } 
+        else {
+            x.style.display = "none";
+        }
+    }
+    
+
+    </script>
+</head>
+<body>
+    <header id="header-container">
+        <div id="home-container" >
+            <a id="home-item"  href="index.html">
+                <i id="home-icon" class="fab fa-phoenix-squadron"></i>
+                <h1 id="home-title">CV Enhancer</h1>
+                <h1 id="home-short-title">CvE</h1>
+            </a>
+            <a href="javascript:void(0);" class="nav-icon" onclick="displayNavBar()">
+                    <i class="fa fa-bars"></i>
+             </a>
+        </div>
+    </header>
+    <main>
+        <div id="overlay-container">
+            <nav id="nav-bar-container">
+                    <a id="nav-Enhance" href="enhance.html">
+                            <i class="fas fa-bacon"></i>
+                            <h1 id="enhance-title">Enhance</h1>
+                    </a>
+                    <a id="nav-library" href="library.html">
+                            <i class="fas fa-book-open"></i>
+                            <h1 id="library-title">Library</h1>
+                    </a> 
+            </nav>
+        </div>
+        <article id="main-window">
+
+            <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="exp-button" class="article-item">Click here to get randomized experience</a> -->
+            <h1>Insert domains</h1>
+            <div id="user-area">
+                <input type="text" id="user-request">
+                <div id="user-buttons-container">
+                    <button id="domain-request-button" class="user-buttons">Get domains</button>    
+                    <button id="completed-paragraphs-request-button" class="user-buttons">Get Completed Paragraph from API</button>
+                    <button id="generate-request-button" class="user-buttons">Generate experience</button>
+                </div>
+                <div id="user-checkbox">
+                    <input type="checkbox" id="empty-domains-checkbox"> Show populated domains only
+                </div>
+
+            </div>
+            <div id="list-area"></div>
+            <div id="example-list-area">
+                <button type="button" class="collapsible">Open Collapsible</button>
+                <div class="content"></div>
+            </div>
+            <div id="completed-paragraph"></div>
+        </article>
+    </main>
+</body>
+</html>
