@@ -1,32 +1,28 @@
-# Webpack Frontend Starterkit
 
-[![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
+different pages have different functionalities, how do i 'embed' this functionality in webpack?
+? : 
+Asynchronous operation control
+Promises
+Default parameters functions like c#
+IIFES
+LET AND VAR
 
-A lightweight foundation for your next webpack based frontend project.
-
-
-### Installation
-
-```
-npm install
-```
-
-### Start Dev Server
-
-```
-npm start
-```
-
-### Build Prod Version
-
-```
-npm run build
-```
-
-### Features:
-
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
+what is webpack
+recursion
+forms
+DOM and creating elements from js
+prototypes
+When removing an element of an array, does its length change?
+foreach((car,index) => console.log(car, index), index, is it a default parameter for the foreach lopp?
+typeof, can we get a type of a class for conditional operators like c#?
+in class, should all variables be declared on the constructor or can we declare outside of it?
+Inheritance/extends and virtual methods
+window, import global object
+BOM
+"this" and variable declaration in classes
+can i access and inline style through js
+class => button addEventListener behavior
+preventDefault();
+Is best practice to not use global variables?
+how to get child of elements from dom
+how to check api availability
