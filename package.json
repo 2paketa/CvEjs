@@ -49,6 +49,6 @@
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "core-js": "^3.4.8",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
